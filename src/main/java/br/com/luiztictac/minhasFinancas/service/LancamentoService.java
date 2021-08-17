@@ -1,6 +1,7 @@
 package br.com.luiztictac.minhasFinancas.service;
 
 import java.util.List;
+import java.util.Optional;
 
 import br.com.luiztictac.minhasFinancas.model.entity.Lancamento;
 import br.com.luiztictac.minhasFinancas.model.enums.StatusLancamento;
@@ -18,4 +19,6 @@ public interface LancamentoService {
 	void atualizarStatus(Lancamento lancamento, StatusLancamento status);
 	
 	void validar(Lancamento lancamento);
+	
+	Optional<Lancamento> obterPorId(Long id);
 }
