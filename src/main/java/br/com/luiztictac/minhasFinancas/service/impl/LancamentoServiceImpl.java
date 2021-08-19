@@ -85,7 +85,7 @@ public class LancamentoServiceImpl implements LancamentoService{
 			throw new RegraNegocioException("Informe um Valor válido!");
 		}
 		if(lancamento.getTipo() == null) {
-			throw new RegraNegocioException("Informe um tipo Lançamento!");
+			throw new RegraNegocioException("Informe um tipo de Lançamento!");
 		}
 	}
 
